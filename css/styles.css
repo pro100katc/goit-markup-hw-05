@@ -208,6 +208,11 @@ p {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 
+  .backdrop.is-hidden{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
 /* ----------HERO------------- */
 
 /* ----------SKILLS------------- */
