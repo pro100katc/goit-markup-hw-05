@@ -303,6 +303,41 @@ p {
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
+.item-card {
+  position: relative;
+  width: 370px;
+  height: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+  
+}
+
+
+.label{
+  position: absolute; 
+  height: 100%;
+  width: 100%;
+  transform: translatey(-40%);
+  
+  
+}
+
+.label>p {
+font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 27px 90px;
+  color: var(--background-white-color);
+background-color: rgba(33, 150, 243, 0.9);
+
+
+}
 
 /* ---------IMAGES-ABOUT-------------- */
 
@@ -533,7 +568,6 @@ img {
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-align: center;
-
 }
 
 /*------PARTNERS------*/
