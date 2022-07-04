@@ -215,12 +215,6 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -230,13 +224,20 @@ p {
   background-color: rgba(255, 165, 0, 0.5);
 }
 
+.backdrop.is-hidden {
+  opacity: 0,5;
+  pointer-events: none;
+  
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 400px;
-  min-width: 600px;
+  min-height: 300px;
+  min-width: 400px;
+  padding: 15px;
   background-color: #fff;
 }
 
