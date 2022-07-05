@@ -331,6 +331,8 @@ p {
 
 .about {
   display: flex;
+  position: relative;
+  z-index: -1;
 }
 
 .about.item-card:not(:last-child) {
@@ -340,6 +342,7 @@ p {
 .item-card:not(:last-child) {
   margin-right: 30px;
 }
+
 
 .caption {
   font-weight: 700;
