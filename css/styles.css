@@ -273,8 +273,6 @@ p {
   opacity: 0, 5;
   pointer-events: none;
   visibility: hidden;
-
-
 }
 
 .modal {
@@ -308,6 +306,7 @@ p {
 .icone-close {
   width: 11px;
   height: 11px;
+  background-color: transparent;
 }
 
 
