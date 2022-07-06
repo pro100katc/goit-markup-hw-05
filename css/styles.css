@@ -30,7 +30,7 @@ p {
   margin: 0;
 }
 
- .list {
+.list {
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -90,7 +90,7 @@ p {
 }
 
 .contacts-link a {
-  transition-property:var(--accent-color);
+  transition-property: var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -101,7 +101,7 @@ p {
 }
 
 .link {
-  transition-property:var(--accent-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -164,8 +164,8 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  fill:var(--primary-text-color);
-  transition-property:var(--accent-color);
+  fill: var(--primary-text-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -189,6 +189,7 @@ p {
 .icon {
   margin-right: 10px;
 }
+
 /* __________HEADER____________*/
 
 /* ----------HERO------------- */
@@ -249,13 +250,15 @@ p {
   padding-right: 32px;
   display: block;
   border: none;
-}
-
-.hero-button:hover {
-  background: #188CE8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, box-shadow;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .backdrop {
@@ -301,12 +304,12 @@ p {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  background-color: transparent;
 }
 
 .icone-close {
   width: 11px;
   height: 11px;
-  background-color: transparent;
 }
 
 
@@ -424,6 +427,9 @@ p {
   height: 44px;
   border-radius: 50%;
   color: var(--icon-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color;
 }
 
 .social-icon {
@@ -436,8 +442,7 @@ p {
 .social-link:focus {
   color: var(--team-section-color);
   background-color: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 img {
@@ -506,6 +511,9 @@ img {
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color, box-shadow;
 }
 
 .item-btn .active-btn {
@@ -517,8 +525,7 @@ img {
   background-color: var(--accent-color);
   color: var(--background-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .btn-filter .item-btn:not(:last-child) {
@@ -543,8 +550,7 @@ img {
 
 .nine-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .about-nine {
@@ -561,6 +567,9 @@ img {
 .nine-card {
   margin-right: 30px;
   margin-bottom: 30px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
 }
 
 .nine-card:nth-child(3n) {
@@ -591,12 +600,6 @@ img {
 .box {
   position: relative;
   width: 370px;
-  height: 294px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--team-section-color);
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   overflow: hidden;
 }
 
@@ -618,14 +621,10 @@ img {
 .overlay-nine>p {
   color: var(--background-white-color);
   padding: 63px 24px;
-  margin: 0;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  text-align: center;
+
 }
 
 /*------PARTNERS------*/
@@ -653,6 +652,9 @@ img {
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   color: var(--icon-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, border-color;
 }
 
 .company li:last-child {
@@ -668,9 +670,8 @@ img {
 .company-link:hover,
 .company-link:focus {
   color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: 1px solid var(--accent-color);
+
 }
 
 /* Footer*/
@@ -704,6 +705,9 @@ img {
 
 .info-footer {
   margin-top: 9px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
 .footer-item:not(:last-child) {
@@ -727,11 +731,13 @@ img {
 
 }
 
-.mail-footer:hover {
+.mail-footer:hover,
+.mail-footer:focus {
   color: var(--accent-color);
 }
 
-.tel-footer:hover {
+.tel-footer:hover,
+.tel-footer:focus {
   color: var(--accent-color);
 }
 
@@ -753,6 +759,9 @@ img {
   margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color;
 }
 
 .social-footer {
@@ -770,11 +779,7 @@ img {
 
 .social-footer-link:hover,
 .social-footer-link:focus {
-  fill: var(--team-section-color);
   background-color: var(--accent-color);
-  border-radius: 50%;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-container {
